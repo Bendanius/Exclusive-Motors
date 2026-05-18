@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Exclusive Motors | Atención fuera de horario</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Atención fuera de horario Exclusive Motors. Dejá tu consulta y nuestro equipo te responde por WhatsApp.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="headlights">
+    <span></span>
+    <span></span>
+  </div>
+
+  <main class="page">
+    <section class="card">
+
+      <header class="premium-brand reveal">
+        <div class="brand-stage">
+          <div class="brand-orbit orbit-one"></div>
+          <div class="brand-orbit orbit-two"></div>
+          <div class="brand-glow"></div>
+          <img class="brand-logo" src="assets/exclusive-logo-dorado.png" alt="Exclusive Motors">
+          <div class="brand-reflection"></div>
+        </div>
+
+        <div class="brand-caption">
+          <span class="line"></span>
+          <p>Atención fuera de horario</p>
+          <span class="line"></span>
+        </div>
+      </header>
+
+      <section class="hero reveal delay-1">
+        <p class="eyebrow">Showroom cerrado · Ciudad del Este</p>
+        <h1>¿Viste una unidad que te interesó?</h1>
+        <p>
+          Dejanos tu consulta y nuestro equipo te responde por WhatsApp
+          con precio, disponibilidad y opciones de financiación.
+        </p>
+      </section>
+
+      <section class="actions reveal delay-2" id="inicio">
+        <button class="action primary" data-open="contacto">
+          <span>01</span>
+          <strong>Quiero que me contacten</strong>
+          <small>Dejá tus datos y te respondemos por WhatsApp.</small>
+        </button>
+
+        <button class="action" data-open="vehiculos">
+          <span>02</span>
+          <strong>Ver vehículos disponibles</strong>
+          <small>Solicitá el stock actualizado según lo que estás buscando.</small>
+        </button>
+
+        <a class="action" target="_blank" href="https://wa.me/595982228182?text=Hola%2C%20vi%20una%20unidad%20en%20el%20showroom%20de%20Exclusive%20Motors%20fuera%20del%20horario%20de%20atenci%C3%B3n.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.">
+          <span>03</span>
+          <strong>Enviar WhatsApp ahora</strong>
+          <small>Escribinos directo si preferís consultar al momento.</small>
+        </a>
+      </section>
+
+      <section class="panel hidden" id="contacto">
+        <button class="back" data-back>← Volver</button>
+
+        <div class="panel-head">
+          <p class="eyebrow">Consulta rápida</p>
+          <h2>Dejanos tus datos</h2>
+          <p>Completá esto en menos de 30 segundos. Un asesor te responde por WhatsApp.</p>
+        </div>
+
+        <form class="lead-form" id="contactForm">
+          <label>Nombre
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </label>
+          <label>WhatsApp
+            <input type="tel" id="phone" name="phone" placeholder="Ej: 0982 000 000" required>
+          </label>
+          <label>¿Qué unidad viste o te interesó?
+            <input type="text" id="unit" name="unit" placeholder="Ej: camioneta blanca del frente, Toyota, Porsche...">
+          </label>
+          <label>¿Qué querés consultar?
+            <select id="interest" name="interest">
+              <option value="Precio y disponibilidad">Precio y disponibilidad</option>
+              <option value="Financiación">Financiación</option>
+              <option value="Agendar visita">Agendar visita</option>
+              <option value="Entregar mi vehículo como parte de pago">Entregar mi vehículo como parte de pago</option>
+              <option value="Stock disponible">Stock disponible</option>
+            </select>
+          </label>
+          <label>Mensaje opcional
+            <textarea id="message" name="message" rows="3" placeholder="Escribí algún detalle si querés..."></textarea>
+          </label>
+          <button class="submit" type="submit">Enviar consulta</button>
+        </form>
+      </section>
+
+      <section class="panel hidden" id="vehiculos">
+        <button class="back" data-back>← Volver</button>
+        <div class="panel-head">
+          <p class="eyebrow">Stock disponible</p>
+          <h2>Solicitá el stock actualizado</h2>
+          <p>Para no mostrarte información desactualizada, dejanos tu WhatsApp y te enviamos las unidades disponibles según lo que estás buscando.</p>
+        </div>
+        <form class="lead-form" id="stockForm">
+          <label>Nombre
+            <input type="text" id="stockName" placeholder="Tu nombre" required>
+          </label>
+          <label>WhatsApp
+            <input type="tel" id="stockPhone" placeholder="Ej: 0982 000 000" required>
+          </label>
+          <label>¿Qué tipo de vehículo buscás?
+            <select id="stockType">
+              <option value="SUV">SUV</option>
+              <option value="Pickup">Pickup</option>
+              <option value="Sedán premium">Sedán premium</option>
+              <option value="Deportivo">Deportivo</option>
+              <option value="0 KM">0 KM</option>
+              <option value="Cualquier unidad disponible">Cualquier unidad disponible</option>
+            </select>
+          </label>
+          <label>Presupuesto aproximado
+            <input type="text" id="budget" placeholder="Ej: USD 50.000 / contado / financiado">
+          </label>
+          <button class="submit" type="submit">Solicitar stock</button>
+        </form>
+      </section>
+
+      <section class="success hidden" id="success">
+        <div class="success-icon">✓</div>
+        <h2>Consulta registrada</h2>
+        <p>Tu solicitud quedó lista. Ahora podés continuar por WhatsApp para que nuestro equipo tenga la conversación abierta.</p>
+        <a class="submit whatsapp" id="successWhatsapp" target="_blank" href="#">Continuar por WhatsApp</a>
+        <button class="back secondary-back" data-reset>Volver al inicio</button>
+      </section>
+
+      <footer class="footer reveal delay-3">
+        <span>Precio · Financiación · Disponibilidad</span>
+        <small>Te respondemos por WhatsApp</small>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
